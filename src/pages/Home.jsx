@@ -1,19 +1,12 @@
 import { useState } from 'react';
 import { searchForUser } from '../api/github';
+import SearchForm from '../components/SearchForm';
 
 const Home = () => {
-  const [searchStr, setSearchStr] = useState('');
-
   const [apiData, setApiData] = useState(null);
   const [apiDataError, setApiDataError] = useState(null);
 
-  const onSearchValueChange = ev => {
-    setSearchStr(ev.target.value);
-  };
-
-  const onsearch = async ev => {
-    ev.preventDefault();
-
+  const onSearch = async searchStr => {
     try {
       setApiDataError(null);
 
@@ -32,6 +25,7 @@ const Home = () => {
     }
 
     if (apiData != null && apiData[0].message) {
+      //For Not Found Message
       return <div>{apiData[0].message}</div>;
     } else if (apiData) {
       return apiData.map(data => (
@@ -48,10 +42,7 @@ const Home = () => {
   return (
     <div>
       <h3>Home Page</h3>
-      <form action="" onSubmit={onsearch}>
-        <input type="text" value={searchStr} onChange={onSearchValueChange} />
-        <button type="submit">Search</button>
-      </form>
+      <SearchForm onSearch={onSearch} />
 
       <div>{renderApiData()}</div>
     </div>
