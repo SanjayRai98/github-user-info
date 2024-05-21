@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { searchForUser } from '../api/github';
 import SearchForm from '../components/SearchForm';
+import UserGrid from '../components/users/UserGrid';
 
 const Home = () => {
   const [apiData, setApiData] = useState(null);
@@ -28,12 +29,7 @@ const Home = () => {
       //For Not Found Message
       return <div>{apiData[0].message}</div>;
     } else if (apiData) {
-      return apiData.map(data => (
-        <div key={data.id}>
-          {data.name}
-          {data.html_url}
-        </div>
-      ));
+      return <UserGrid userData={apiData} />;
     }
 
     return null;

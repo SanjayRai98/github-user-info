@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Starred from './pages/Starred';
 import MainLayout from './components/MainLayout';
+import User from './pages/User';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/starred" element={<Starred />} />
         </Route>
+        <Route path="/user/:loginName" element={<User />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
