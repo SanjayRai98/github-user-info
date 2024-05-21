@@ -2,9 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getRepoByName } from '../api/github';
 
-const User = () => {
-  const { loginName } = useParams();
-
+const useUserByName = loginName => {
   const [showData, setShowData] = useState(null);
   const [showError, setShowError] = useState(null);
 
@@ -20,6 +18,14 @@ const User = () => {
 
     fetchData();
   }, [loginName]);
+
+  return { showData, showError };
+};
+
+const User = () => {
+  const { loginName } = useParams();
+
+  const { showData, showError } = useUserByName(loginName);
 
   if (showError) {
     return <div>We have an Error : {showError.message}</div>;
