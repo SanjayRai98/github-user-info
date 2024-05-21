@@ -1,31 +1,14 @@
-import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getRepoByName } from '../api/github';
-
-const useUserByName = loginName => {
-  const [showData, setShowData] = useState(null);
-  const [showError, setShowError] = useState(null);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const data = await getRepoByName(loginName);
-        setShowData(data);
-      } catch (error) {
-        setShowError(error);
-      }
-    }
-
-    fetchData();
-  }, [loginName]);
-
-  return { showData, showError };
-};
+import { useQuery } from '@tanstack/react-query';
 
 const User = () => {
   const { loginName } = useParams();
 
-  const { showData, showError } = useUserByName(loginName);
+  const { data: showData, error: showError } = useQuery({
+    queryKey: ['user', loginName],
+    queryFn: () => getRepoByName(loginName),
+  });
 
   if (showError) {
     return <div>We have an Error : {showError.message}</div>;
