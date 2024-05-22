@@ -1,0 +1,292 @@
+.dotted-border {
+  position: relative;
+  border: dotted 2px blue;
+  margin: 5px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  border-radius: 12px;
+  transition:
+    width 0.3s,
+    height 0.3s ease-in-out;
+}
+
+.dotted-border:hover {
+  width: 550px;
+  height: 270px;
+  border: solid 4px red;
+  cursor: pointer;
+}
+
+.dotted-border h2 {
+  color: #2400e1;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.repo-img {
+  margin-top: 30px;
+}
+
+.image-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #12ebe0;
+}
+
+.image-con {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.repo-owner {
+  margin-left: 3%;
+}
+
+.repo-title {
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+
+.relative {
+  position: relative;
+}
+
+.search-again {
+  font-size: 18px;
+  margin-left: 2%;
+  margin-top: 20px;
+  position: relative;
+  transition: font-size 0.4s ease-in-out;
+}
+
+.search-again-link {
+  text-decoration: none;
+  border: solid 2px blue;
+  border-radius: 12px;
+  padding: 5px 12px;
+}
+
+.search-again:hover {
+  font-size: 22px;
+}
+
+.search-again-link:hover {
+  color: #17c425;
+}
+
+.app-heading {
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+.app-heading h1 {
+  color: #2400e1;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.app-heading p {
+  color: darkgray;
+  font-size: 18px;
+  margin: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.nav-container li {
+  margin: 0 10px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.nav-link {
+  display: block;
+  padding: 3px 15px;
+  position: relative;
+  text-decoration: none;
+  color: #2400e1;
+}
+
+.nav-link:hover {
+  color: #2400e1;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2px;
+  left: 0%;
+  bottom: 0;
+  background-color: #2400e1;
+  animation: slide-in 0.3s ease-in forwards;
+}
+
+@keyframes slide-in {
+  from {
+    left: 50%;
+    width: 0%;
+  }
+  to {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+  font-size: 22px;
+  font-family: cursive;
+  text-transform: uppercase;
+}
+
+.search-input {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  width: 200px;
+  margin: auto;
+  outline: none;
+  padding: 13px 15px;
+  border: solid 1px #dbdbdb;
+  box-shadow: 0px 0px 10px 0px rgba(219, 219, 219, 0.5);
+  font-size: 14px;
+  border-radius: 12px;
+  color: #8d8d8d;
+}
+
+.search-input::placeholder {
+  font-weight: 300;
+  color: #8d8d8d;
+}
+
+.search-button {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.search-button button {
+  color: #fff;
+  background-color: #2400e1;
+  margin: auto;
+  padding: 10px 50px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+}
+
+.search-button button:hover {
+  cursor: pointer;
+}
+
+.inline {
+  display: flex;
+  justify-content: center;
+}
+
+.user-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: solid 1px gray;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 4px 0px rgba(219, 219, 219, 0.5);
+}
+
+.search-img-wrapper {
+  width: 250;
+  height: 250px;
+  border-radius: 50%;
+  border: solid 1px #2400e1;
+  margin-right: 50px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px 0px rgba(219, 219, 219, 0.5);
+}
+
+.search-img-wrapper img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.search-card {
+  text-align: center;
+}
+
+.search-card h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  color: #2400e1;
+}
+
+.search-card-link {
+  text-decoration: none;
+  color: #2400e1;
+  border: solid 2px aqua;
+  border-radius: 12px;
+  padding: 5px 10px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.search-card-link:hover {
+  color: #17c425;
+  font-size: 25px;
+}
+
+.not-found {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  color: red;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

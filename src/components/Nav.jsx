@@ -14,10 +14,12 @@ const LINKS = [
 const Nav = () => {
   return (
     <div>
-      <ul>
+      <ul className="nav-container">
         {LINKS.map(item => (
           <li key={item.to}>
-            <Link to={item.to}>{item.text}</Link>
+            <Link to={item.to} className="nav-link">
+              {item.text}
+            </Link>
           </li>
         ))}
       </ul>

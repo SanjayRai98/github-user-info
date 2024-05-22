@@ -27,7 +27,7 @@ const Home = () => {
 
     if (apiData != null && apiData[0].message) {
       //For Not Found Message
-      return <div>{apiData[0].message}</div>;
+      return <div className="not-found">{apiData[0].message}</div>;
     } else if (apiData) {
       return <UserGrid userData={apiData} />;
     }
@@ -37,10 +37,10 @@ const Home = () => {
 
   return (
     <div>
-      <h3>Home Page</h3>
+      <h3 className="text-center">Home Page</h3>
       <SearchForm onSearch={onSearch} />
 
-      <div>{renderApiData()}</div>
+      <div className="inline">{renderApiData()}</div>
     </div>
   );
 };

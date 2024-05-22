@@ -2,7 +2,7 @@ import UserCard from './UserCard';
 
 const UserGrid = ({ userData }) => {
   return (
-    <div>
+    <div className="user-grid">
       {userData.map(data => (
         <UserCard
           key={data.id}

@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { getRepoByName } from '../api/github';
 import { useQuery } from '@tanstack/react-query';
+import ReposGrid from '../components/user_repos/ReposGrid';
 
 const User = () => {
   const { loginName } = useParams();
@@ -16,27 +17,39 @@ const User = () => {
 
   if (showData) {
     return (
-      <div>
-        <div>
-          User Page
-          <Link to="/">Search Another</Link>
-          <h1>{loginName} Repositories</h1>
+      <div className="relative">
+        <div className="search-again">
+          <Link className="search-again-link" to="/">
+            Search Another
+          </Link>
         </div>
-        <h3>Data for {showData[0].name}</h3>
-        <ul>
-          {showData.map(data => (
-            <li key={data.id}>{data.name}</li>
-          ))}
-        </ul>
+
+        <div className="flex repo-img">
+          <div className="image-wrapper">
+            <img
+              className="image-con"
+              src={showData[0].owner.avatar_url}
+              alt={showData[0].owner.login}
+            ></img>
+          </div>
+          <div className="repo-owner">
+            <h2>{showData[0].owner.login}</h2>
+            <Link to={showData[0].owner.html_url}>
+              {showData[0].owner.html_url}
+            </Link>
+          </div>
+        </div>
+
+        <div className="repo-title">
+          <h1>Repositories :- </h1>
+          <hr />
+        </div>
+        <ReposGrid showData={showData} />
       </div>
     );
   }
 
-  return (
-    <div>
-      <h1>Data is loading</h1>
-    </div>
-  );
+  return <div className="loader"></div>;
 };
 
 export default User;

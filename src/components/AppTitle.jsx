@@ -5,7 +5,7 @@ export default function AppTitle(props) {
   } = props;
 
   return (
-    <div>
+    <div className="app-heading">
       <h1>{title}</h1>
       <p>{subtitle}</p>
     </div>
