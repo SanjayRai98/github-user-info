@@ -1,24 +1,39 @@
 .dotted-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   position: relative;
-  border: dotted 2px blue;
+  border: solid 1px rgb(189, 189, 189);
   margin: 5px;
   margin-right: 40px;
   margin-bottom: 20px;
   padding: 5px 15px;
-  width: 500px;
-  height: 250px;
+  width: 450px;
+  min-height: 250px;
   text-align: center;
   border-radius: 12px;
+  font-family: cursive;
+  box-shadow: 15px 7px 15px 7px rgb(189, 189, 189);
   transition:
     width 0.3s,
     height 0.3s ease-in-out;
 }
 
 .dotted-border:hover {
-  width: 550px;
-  height: 270px;
-  border: solid 4px red;
+  width: 455px;
+  height: 254px;
   cursor: pointer;
+  background-color: #71e785;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.dotted-border h5 {
+  margin-right: 15px;
+  color: #007ce1;
+  font-size: 16px;
 }
 
 .dotted-border h2 {
