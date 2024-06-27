@@ -1,7 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
 import { getRepoByName } from '../api/github';
 import { useQuery } from '@tanstack/react-query';
-import ReposGrid from '../components/user_repos/ReposGrid';
+// import ReposGrid from '../components/user_repos/ReposGrid';
+import RepoPaging from '../components/user_repos/RepoPaging';
 
 const User = () => {
   const { loginName } = useParams();
@@ -44,7 +45,8 @@ const User = () => {
           <h1>Repositories :- </h1>
           <hr />
         </div>
-        <ReposGrid showData={showData} />
+        <RepoPaging showData={showData} />
+        {/* <ReposGrid showData={showData} /> */}
       </div>
     );
   }

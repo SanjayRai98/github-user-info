@@ -17,7 +17,7 @@ const Home = () => {
       setApiDataError(error);
     }
 
-    console.log(apiData);
+    //console.log(apiData);
   };
 
   const renderApiData = () => {
