@@ -13,6 +13,7 @@
   text-align: center;
   border-radius: 12px;
   font-family: cursive;
+  padding: 0 20px;
   box-shadow: 15px 7px 15px 7px rgb(189, 189, 189);
   transition:
     width 0.3s,
@@ -79,6 +80,12 @@
 .repo-title {
   margin-bottom: 40px;
   margin-left: 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.repo-title h1 {
+  color: #2400e1;
 }
 
 .relative {
@@ -90,7 +97,7 @@
   margin-left: 2%;
   margin-top: 20px;
   position: relative;
-  transition: font-size 0.4s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
 }
 
 .search-again-link {
@@ -101,7 +108,7 @@
 }
 
 .search-again:hover {
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .search-again-link:hover {
@@ -275,7 +282,7 @@
 
 .search-card-link:hover {
   color: #17c425;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .not-found {
@@ -365,4 +372,50 @@
 
 .repo-paging h3 {
   margin-bottom: 65px;
+}
+
+.not-found-data {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: cursive;
+  text-transform: uppercase;
+  margin-top: 60px;
+  padding: 5px 15px;
+  animation: changeColor 2s linear 0.2s infinite alternate;
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dotted-border {
+    margin-left: 10%;
+    width: 250px;
+    box-shadow: 7px 7px 15px 4px rgb(189, 189, 189);
+  }
+
+  .dotted-border h2 {
+    font-size: 105%;
+    margin: 0 auto;
+  }
+
+  .repo-title h1 {
+    margin: 10px auto;
+  }
+
+  .inline {
+    margin: 0 25px;
+  }
+
+  .search-img-wrapper {
+    margin: auto;
+    height: 180px;
+  }
 }

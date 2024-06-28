@@ -27,7 +27,7 @@ const Home = () => {
 
     if (apiData != null && apiData[0].message) {
       //For Not Found Message
-      return <div className="not-found">{apiData[0].message}</div>;
+      return <div className="not-found-data">{apiData[0].message}</div>;
     } else if (apiData) {
       return <UserGrid userData={apiData} />;
     }

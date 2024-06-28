@@ -42,8 +42,8 @@ const User = () => {
         </div>
 
         <div className="repo-title">
-          <h1>Repositories :- </h1>
           <hr />
+          <h1>Repositories :- </h1>
         </div>
         <RepoPaging showData={showData} />
         {/* <ReposGrid showData={showData} /> */}

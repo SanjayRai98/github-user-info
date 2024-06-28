@@ -21,14 +21,6 @@ const RepoPaging = ({ showData }) => {
       if (lastIndex <= dataLength || lastIndex > dataLength) {
         setStartIndex(count => count - dataMaxLimit);
         setLastIndex(count => count - dataMaxLimit);
-
-        console.log(
-          'In If Condition : ',
-          'Index start at',
-          startIndex,
-          'Index last at',
-          lastIndex
-        );
       } else {
         //console.log('end page is reach');
       }
@@ -40,13 +32,6 @@ const RepoPaging = ({ showData }) => {
     if (lastIndex <= dataLength) {
       setStartIndex(count => count + dataMaxLimit);
       setLastIndex(count => count + dataMaxLimit);
-      console.log(
-        'In If Condition : ',
-        'Index start at',
-        startIndex,
-        'Index last at',
-        lastIndex
-      );
     } else {
       //console.log('end page is reach');
     }
