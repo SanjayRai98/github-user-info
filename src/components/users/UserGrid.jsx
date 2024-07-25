@@ -13,6 +13,7 @@ const UserGrid = ({ userData }) => {
           bio={data.bio ? data.bio : 'Bio has not written'}
           location={data.location ? data.location : 'location not set'}
           createdAt={data.created_at}
+          publicRepos={data.public_repos}
         />
       ))}
     </div>

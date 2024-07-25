@@ -97,22 +97,29 @@
   margin-left: 2%;
   margin-top: 20px;
   position: relative;
-  transition: font-size 0.3s ease-in-out;
+  width: 170px;
+  top: 35px;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+  border-bottom-width: 2px;
 }
 
 .search-again-link {
   text-decoration: none;
-  border: solid 2px blue;
   border-radius: 12px;
   padding: 5px 12px;
-}
-
-.search-again:hover {
-  font-size: 19px;
+  position: absolute;
+  top: -32px;
+  left: 10px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .search-again-link:hover {
   color: #17c425;
+  text-decoration: none;
+  top: -35px;
 }
 
 .app-heading {
