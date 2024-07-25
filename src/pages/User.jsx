@@ -51,7 +51,7 @@ const User = () => {
     );
   }
 
-  return <div className="loader"></div>;
+  return <div className="loader flex"></div>;
 };
 
 export default User;
