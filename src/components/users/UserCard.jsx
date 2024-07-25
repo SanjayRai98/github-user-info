@@ -19,7 +19,7 @@ const UserCard = ({
         <img src={image} alt={name} />
       </div>
       <div className="search-card">
-        <h2>{name}</h2>
+        <h2>{name ? name : 'Not Name Mention'}</h2>
         <a href={html_url} target="_blank" rel="noreferrer">
           {html_url}
         </a>
