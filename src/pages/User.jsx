@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
 import { getRepoByName } from '../api/github';
 import { useQuery } from '@tanstack/react-query';
-// import ReposGrid from '../components/user_repos/ReposGrid';
 import RepoPaging from '../components/user_repos/RepoPaging';
+import githubImage from './../images/Security-DarkMode-1.webp';
 
 const User = () => {
   const { loginName } = useParams();
@@ -18,7 +18,20 @@ const User = () => {
 
   if (showData) {
     return (
-      <div className="relative">
+      <div
+        style={{
+          height: 'auto',
+        }}
+        className="app-img"
+      >
+        <img
+          style={{
+            position: 'fixed',
+          }}
+          src={githubImage}
+          alt="Git hub image"
+          className="a-img"
+        ></img>
         <div className="search-again">
           <Link className="search-again-link" to="/">
             Search Another
@@ -46,7 +59,6 @@ const User = () => {
           <h1>Repositories :- </h1>
         </div>
         <RepoPaging showData={showData} />
-        {/* <ReposGrid showData={showData} /> */}
       </div>
     );
   }

@@ -107,7 +107,7 @@
   top: 35px;
   border: none;
   border-bottom-style: solid;
-  border-bottom-color: blue;
+  border-bottom-color: rgb(30, 224, 238);
   border-bottom-width: 2px;
 }
 
@@ -119,11 +119,12 @@
   top: -32px;
   left: 10px;
   text-align: center;
+  color: rgb(234, 248, 35);
   transition: all 0.5s ease-in-out;
 }
 
 .search-again-link:hover {
-  color: #17c425;
+  color: #1aee2b;
   text-decoration: none;
   top: -35px;
 }
@@ -402,6 +403,22 @@ a {
   animation: changeColor 2s linear 0.2s infinite alternate;
 }
 
+.app-img {
+  position: relative;
+  height: 104vh;
+  overflow: hidden;
+}
+
+.a-img {
+  position: absolute;
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(10px);
+  transform: scale(1.03);
+}
+
 @keyframes changeColor {
   0% {
     color: red;
@@ -421,7 +438,8 @@ a {
   }
   .dotted-border {
     margin-left: 10%;
-    width: 250px;
+    min-width: 250px;
+    width: 75%;
     box-shadow: 7px 7px 15px 4px rgb(189, 189, 189);
   }
 
