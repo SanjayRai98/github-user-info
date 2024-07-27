@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/github-user-info/static/css/main.03255fb4.css",
-    "main.js": "/github-user-info/static/js/main.e251c487.js",
+    "main.css": "/github-user-info/static/css/main.a178f250.css",
+    "main.js": "/github-user-info/static/js/main.309e9f37.js",
     "static/js/453.fb3e6b80.chunk.js": "/github-user-info/static/js/453.fb3e6b80.chunk.js",
+    "static/media/Collaboration-DarkMode-2.webp": "/github-user-info/static/media/Collaboration-DarkMode-2.fff3e7d479ce42f6e69e.webp",
+    "static/media/Security-DarkMode-1.webp": "/github-user-info/static/media/Security-DarkMode-1.ca80803f6d205e14a039.webp",
     "service-worker.js": "/github-user-info/service-worker.js",
     "index.html": "/github-user-info/index.html",
-    "main.03255fb4.css.map": "/github-user-info/static/css/main.03255fb4.css.map",
-    "main.e251c487.js.map": "/github-user-info/static/js/main.e251c487.js.map",
+    "main.a178f250.css.map": "/github-user-info/static/css/main.a178f250.css.map",
+    "main.309e9f37.js.map": "/github-user-info/static/js/main.309e9f37.js.map",
     "453.fb3e6b80.chunk.js.map": "/github-user-info/static/js/453.fb3e6b80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03255fb4.css",
-    "static/js/main.e251c487.js"
+    "static/css/main.a178f250.css",
+    "static/js/main.309e9f37.js"
   ]
 }
