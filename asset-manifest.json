@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/github-user-info/static/css/main.a178f250.css",
-    "main.js": "/github-user-info/static/js/main.309e9f37.js",
+    "main.css": "/github-user-info/static/css/main.893c32ee.css",
+    "main.js": "/github-user-info/static/js/main.b5b49be4.js",
     "static/js/453.fb3e6b80.chunk.js": "/github-user-info/static/js/453.fb3e6b80.chunk.js",
+    "static/media/—Pngtree—gradient abstract geometric line_926318.jpg": "/github-user-info/static/media/—Pngtree—gradient abstract geometric line_926318.78117aea463688607c0f.jpg",
     "static/media/Collaboration-DarkMode-2.webp": "/github-user-info/static/media/Collaboration-DarkMode-2.fff3e7d479ce42f6e69e.webp",
-    "static/media/Security-DarkMode-1.webp": "/github-user-info/static/media/Security-DarkMode-1.ca80803f6d205e14a039.webp",
     "service-worker.js": "/github-user-info/service-worker.js",
     "index.html": "/github-user-info/index.html",
-    "main.a178f250.css.map": "/github-user-info/static/css/main.a178f250.css.map",
-    "main.309e9f37.js.map": "/github-user-info/static/js/main.309e9f37.js.map",
+    "main.893c32ee.css.map": "/github-user-info/static/css/main.893c32ee.css.map",
+    "main.b5b49be4.js.map": "/github-user-info/static/js/main.b5b49be4.js.map",
     "453.fb3e6b80.chunk.js.map": "/github-user-info/static/js/453.fb3e6b80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a178f250.css",
-    "static/js/main.309e9f37.js"
+    "static/css/main.893c32ee.css",
+    "static/js/main.b5b49be4.js"
   ]
 }
