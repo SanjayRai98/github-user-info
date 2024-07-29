@@ -42,7 +42,7 @@ const Home = () => {
       return <UserGrid userData={apiData} />;
     }
 
-    return null;
+    return <div className="no-data"></div>;
   };
 
   return (

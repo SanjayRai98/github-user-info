@@ -19,16 +19,22 @@ const UserCard = ({
         <img src={image} alt={name} />
       </div>
       <div className="search-card">
-        <h2>{name ? name : 'Not Name Mention'}</h2>
+        <h2>{name ? name : 'No Name Mention'}</h2>
         <a href={html_url} target="_blank" rel="noreferrer">
           {html_url}
         </a>
 
-        <p>Bio : {bio}</p>
-        <p>Created On : {createdAt.slice(0, 10)}</p>
+        <p>
+          <span className="text-blue">Bio : </span>
+          {bio}
+        </p>
+        <p>
+          <span className="text-blue">Created On : </span>
+          {createdAt.slice(0, 10)}
+        </p>
         {publicRepos ? (
           <Link className="search-card-link" to={`/user/${login_name}`}>
-            Show Repositories
+            <span className="anim-line"></span>Show Repositories
           </Link>
         ) : (
           displayAlert('No Public Repos', 4000)

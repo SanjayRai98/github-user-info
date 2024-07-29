@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { getRepoByName } from '../api/github';
 import { useQuery } from '@tanstack/react-query';
 import RepoPaging from '../components/user_repos/RepoPaging';
-import githubImage from './../images/Security-DarkMode-1.webp';
+import githubImage from './../images/—Pngtree—gradient abstract geometric line_926318.jpg';
 
 const User = () => {
   const { loginName } = useParams();
@@ -63,7 +63,11 @@ const User = () => {
     );
   }
 
-  return <div className="loader flex"></div>;
+  return (
+    <div className="loader-container">
+      <div className="loader"></div>
+    </div>
+  );
 };
 
 export default User;

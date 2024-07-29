@@ -1,8 +1,9 @@
 const ReposCard = ({ name, description, createdAt }) => {
+  const slicedName = name.slice(0, 20);
   return (
     <div className="dotted-border">
       <div>
-        <h2>{name}</h2>
+        <h2>{slicedName}</h2>
       </div>
 
       <div className="description">
